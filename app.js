@@ -11,6 +11,7 @@ app.set("views",path.resolve(__dirname,"views"));
 app.set("view engine", "ejs");
 
 app.get("/",function(request, response){
+	response.render("index");
 	response.send("Hi");
 }
 );
